@@ -52,9 +52,9 @@ const SideToggle = () => {
 
   const Menus = [
     // { title: "Home", src: "https://i.imgur.com/QMNAWX7.png", gap: true, slug: "/home", tab: "home" },
-    { title: "Ask Web3Agent", src: "https://i.imgur.com/QMNAWX7.png", gap: true, slug: "/", tab: "askWeb3Agent" },
+    { title: "Home", src: "https://i.imgur.com/QMNAWX7.png", gap: true, slug: "/", tab: "askWeb3Agent" },
     // { title: "Ask Web3Agent", src: "https://i.imgur.com/2pHVHza.png", slug: "/", tab: "askWeb3Agent" },
-    // { title: "Send Transacetion", src: "https://i.imgur.com/XjBwspt.png", slug: "/", tab: "sendTxn" },
+    { title: "Send Transacetion", src: "https://i.imgur.com/XjBwspt.png", slug: "/", tab: "sendTxn" },
     // { title: "Deploy Contracts", src: "https://i.imgur.com/VT7UdPH.png", slug: "/", tab: "deployContract" },
     // { title: "Defi", src: "https://i.imgur.com/IYxIvAB.png", slug: "/defi-prompt" },
 
@@ -79,15 +79,15 @@ const SideToggle = () => {
         />
         <div className="flex gap-x-4 items-cente mt-6">
           <img
-            src="https://i.imgur.com/NdhWi7c.png"
-            className={` h-9 cursor-pointer duration-500 ${open && "rotate-[360deg]"
+            src="https://i.imgur.com/eGWZECe.png"
+            className={`mt-[-5px] h-9 cursor-pointer duration-500 ${open && "rotate-[360deg]"
               }`}
           />
           <h1
             className={` origin-left font-bold text-xl duration-300 ${!open && "scale-0"
               }`}
           >
-            Web3 Agent
+            Auto Defi
           </h1>
         </div>
         <ul className="pt-6">

@@ -143,7 +143,7 @@ const NETWORKS = [baseGoerli,zeta_testnet, lineaTestnet]
 const { chains, provider } = configureChains(NETWORKS, [infuraProvider({ apiKey: "" }), publicProvider()])
 
 const { connectors } = getDefaultWallets({
-  appName: "Web3 Agent",
+  appName: "Auto Defi",
   chains,
 })
 

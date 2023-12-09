@@ -1,6 +1,6 @@
 module.exports = {
     apps: [{
-        name: "web3agent-defichain",
+        name: "auto-defi",
         script: "npm start"
     }]
 }

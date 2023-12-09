@@ -111,7 +111,7 @@ export default function History() {
         <div className=' h-screen w-full overflow-auto'>
             {/* <div onClick={() => { readTable() }}>Click to load</div> */}
             <div className='text-2xl font-medium w-full text-center p-4 rounded-lg'>
-            <h1 className="text-emerald-700 text-center text-4xl font-black">
+            <h1 className="text-black-700 text-center text-4xl font-black">
                     History
                 </h1>
             </div>

@@ -194,7 +194,7 @@ export default function ManageHistory() {
             <div className="bg-white flex flex-col w-full overflow-auto ">
 
             <div className="text-2xl font-semibold text-gray-500 text-center py-2 sm:py-8 ">
-                    <h1 className="text-emerald-700 text-center text-4xl font-black">
+                    <h1 className="text-black-700 text-center text-4xl font-black">
                     Manage Your History
                     </h1>
             </div>
@@ -223,7 +223,7 @@ export default function ManageHistory() {
                     {
                         !VALID_CHAIN_ID.includes(chain?.id) && (
                             <div className='flex justify-center items-center flex-col text-red-500 font-medium'>
-                                <div className=' text-lg'>Unspported Chain for Tableland History - {chain?.name} </div>
+                                <div className=' text-lg'>Unspported Chain for History - {chain?.name} </div>
                                 <div className='text-gray-500'>Switch The Network</div>
                             </div>
                         )

@@ -54,8 +54,8 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
     return (
       <div className="mx-auto w-full px-4">
         <div className="rounded-lg border bg-background p-8 shadow-md">
-          <h1 className=" text-emerald-700 text-center text-3xl font-black">
-            Your Web3 Agent
+          <h1 className=" text-black-700 text-center text-3xl font-black">
+            Your Auto Defi 
           </h1>
 
 
@@ -89,7 +89,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
     return (
       <div className="mx-auto w-full px-4">
         <div className="rounded-lg border bg-background p-8 shadow-md">
-          <h1 className=" text-emerald-700 text-center text-3xl font-black">
+          <h1 className=" text-black-700 text-center text-3xl font-black">
             Transfer Tokens from Prompt using AI
           </h1>
 
@@ -125,7 +125,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
     return (
       <div className="mx-auto w-full px-4">
         <div className="rounded-lg border bg-background p-8 shadow-md">
-          <h1 className=" text-emerald-700 text-center text-3xl font-black">
+          <h1 className=" text-black-700 text-center text-3xl font-black">
             Unleashing the Power of AI
           </h1>
           <h3 className="leading-normal my-2 text-lg text-muted-foreground text-center">
@@ -144,7 +144,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
     return (
       <div className="mx-auto w-full px-4">
         <div className="rounded-lg border bg-background p-8 shadow-md">
-          <h1 className=" text-emerald-700 text-center text-3xl font-black">
+          <h1 className=" text-black-700 text-center text-3xl font-black">
             Deploy Contract from Prompt using AI
           </h1>
 

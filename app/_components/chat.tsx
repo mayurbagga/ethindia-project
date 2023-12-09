@@ -1366,9 +1366,9 @@ export function Chat({ id, initialMessages, className }: ChatProps) {
     return <LoginErrorMsg
       classname="flex flex-col justify-center items-center h-[calc(100vh-120px)]"
       title="Login Requires!"
-      titleClassName="text-2xl font-bold my-2 text-green-600"
+      titleClassName="text-2xl font-bold my-2 text-black-600"
       subTitle="Please Login to Access Propmt!"
-      subTitleClassName="text-lg font-bold my-2 text-green-500"
+      subTitleClassName="text-lg font-bold my-2 text-black-500"
     />
   }
   async function makeBackUpChat() {

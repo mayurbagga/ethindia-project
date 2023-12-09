@@ -21864,10 +21864,10 @@
   },
   {
     "name": "Nebula Mainnet",
-    "chain": "green-giddy-denebola",
+    "chain": "black-giddy-denebola",
     "rpc": [
-      "https://mainnet.skalenodes.com/v1/green-giddy-denebola",
-      "wss://mainnet-proxy.skalenodes.com/v1/ws/green-giddy-denebola"
+      "https://mainnet.skalenodes.com/v1/black-giddy-denebola",
+      "wss://mainnet-proxy.skalenodes.com/v1/ws/black-giddy-denebola"
     ],
     "faucets": [],
     "nativeCurrency": {
@@ -21882,7 +21882,7 @@
     "explorers": [
       {
         "name": "nebula",
-        "url": "https://green-giddy-denebola.explorer.mainnet.skalenodes.com",
+        "url": "https://black-giddy-denebola.explorer.mainnet.skalenodes.com",
         "icon": "nebula",
         "standard": "EIP3091"
       }

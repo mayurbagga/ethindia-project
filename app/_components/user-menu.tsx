@@ -35,7 +35,7 @@ export function UserMenu({ user }: UserMenuProps) {
         >
           <DropdownMenuItem className="flex-col items-start">
 
-            <div style={{ display: "flex", flexDirection: "row" }} className="text-xs cursor-pointer text-emerald-700">
+            <div style={{ display: "flex", flexDirection: "row" }} className="text-xs cursor-pointer text-black-700">
               {user?.email}
             </div>
           </DropdownMenuItem>

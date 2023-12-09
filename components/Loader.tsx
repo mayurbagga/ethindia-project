@@ -15,7 +15,7 @@ export default function Loader({ onClick, showCloseIcon }: LoaderTypeType) {
                     />
                 </div>
             )}
-            <div className="animate-spin-slow loader rounded-full border-4 border-t-4 border-t-orange-300 border-b-green-300 border-gray-200 h-24 w-24 my-4 flex justify-center items-center">
+            <div className="animate-spin-slow loader rounded-full border-4 border-t-4 border-t-orange-300 border-b-black-300 border-gray-200 h-24 w-24 my-4 flex justify-center items-center">
                 <RxColorWheel className="w-16 h-16 text-white" />
             </div>
             <h2 className="text-center text-white text-xl font-semibold mx-4">

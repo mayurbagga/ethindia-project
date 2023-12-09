@@ -228,7 +228,7 @@ export function Header() {
     //       {isConnected ? (
     //         <>
     //           {/* Your existing connected user interface */ }
-    //          <button onClick={handleSignMessage} className="text-white bg-green-500 px-4 py-2 rounded">
+    //          <button onClick={handleSignMessage} className="text-white bg-black-500 px-4 py-2 rounded">
     //             Sign Message
     //           </button> 
     //         </>

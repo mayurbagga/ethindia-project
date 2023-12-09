@@ -12,7 +12,7 @@ import { useActiveTabStates } from '../../providers/operations';
 
 const exampleMessages = [
   {
-    heading: 'Ask Agent',
+    heading: 'Home',
     message: `Explore the web3 ecosystem and find the resources that you need.`,
     imgurl: 'https://i.imgur.com/2pHVHza.png',
     slug: '/',
@@ -43,7 +43,7 @@ export function Homescreen() {
   return (
     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", marginTop: "4rem" }} className="w-full px-4 h-full">
       <div className="rounded-lg border bg-background p-10 shadow-md">
-        <h1 className="text-emerald-700 text-center text-4xl font-black">
+        <h1 className="text-black-700 text-center text-4xl font-black">
           Unlock the power of web3
         </h1>
         {/* <Button onClick={() => {
@@ -55,7 +55,7 @@ export function Homescreen() {
           writeTable({ action: "TEST_ACTION", object: { timestamp: Date.now(), body: { code: 12 } } });
         }}>WRITE</Button> */}
         <p className="leading-normal mt-2 text-lg text-muted-foreground text-center">
-          Search information, execute transactions, and much more by chatting with Web3 Agent.
+          Search information, execute transactions, and much more by chatting with Auto Defi.
         </p>
         {/* <p className="mb-2 text-center leading-normal text-muted-foreground">
           I am a smart contract development assistant. I can help you write, and

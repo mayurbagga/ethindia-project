@@ -59,7 +59,7 @@ export default function Index() {
     return (
         <div className='h-screen flex justify-center items-center'>
             <div>
-                <button className='p-2 bg-green-400' onClick={() => checkAllow()}>Click to check allowance</button>
+                <button className='p-2 bg-black-400' onClick={() => checkAllow()}>Click to check allowance</button>
             </div>
         </div>
     )
