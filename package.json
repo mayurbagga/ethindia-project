@@ -23,6 +23,7 @@
     "@erc725/erc725.js": "^0.21.2",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
+    "@metamask/sdk-react": "^0.14.1",
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
     "@radix-ui/react-alert-dialog": "^1.0.5",

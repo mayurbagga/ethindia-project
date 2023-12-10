@@ -79,7 +79,7 @@ function Input({
                 {type === "clipboard" && (
                     <span
                         title="Click to copy"
-                        className="cursor-pointer hover:text-black-600 h-full leading-snug font-normal text-center text-slate-300 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-6"
+                        className="cursor-pointer hover:text-green-600 h-full leading-snug font-normal text-center text-slate-300 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-6"
                         onClick={async () => {
                             await navigator.clipboard.writeText(value as never);
                         }}

@@ -15,7 +15,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
     }
     return (
         <Transition.Root show={open} as={Fragment}>
-            <Dialog as="div" className="relative z-10" onClose={setOpen}>
+            <Dialog as="div" className="relative z-50" onClose={setOpen}>
                 <Transition.Child
                     as={Fragment}
                     enter="ease-in-out duration-500"
@@ -95,7 +95,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                            <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                            <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
                                                                         </div>
                                                                     </div>
                                                                 ))}
@@ -125,7 +125,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -158,7 +158,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -190,7 +190,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -222,7 +222,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -261,7 +261,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -297,7 +297,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -312,7 +312,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                 <Disclosure>
                                                     {({ open }) => (
                                                         <>
-                                                            <Disclosure.Button className="w-full bg-black-400 p-2 rounded-sm text-sm font-medium flex justify-between items-center">
+                                                            <Disclosure.Button className="w-full bg-green-400 p-2 rounded-sm text-sm font-medium flex justify-between items-center">
                                                                 <div>Linea Testnet Contract Deployment Command</div>
                                                                 <div>
                                                                     {
@@ -328,7 +328,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -343,7 +343,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                 <Disclosure>
                                                     {({ open }) => (
                                                         <>
-                                                            <Disclosure.Button className="w-full bg-black-400 p-2 rounded-sm text-sm font-medium flex justify-between items-center">
+                                                            <Disclosure.Button className="w-full bg-green-400 p-2 rounded-sm text-sm font-medium flex justify-between items-center">
                                                                 <div>Arbitrum Goerli Contract Deployment Command</div>
                                                                 <div>
                                                                     {
@@ -359,7 +359,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -379,7 +379,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                 <Disclosure>
                                                     {({ open }) => (
                                                         <>
-                                                            <Disclosure.Button className="w-full text-white font-semibold bg-black-500 p-2 rounded-sm text-sm flex justify-between items-center">
+                                                            <Disclosure.Button className="w-full text-white font-semibold bg-green-500 p-2 rounded-sm text-sm flex justify-between items-center">
                                                                 <div>Transaction Commands</div>
                                                                 <div>
                                                                     {
@@ -395,7 +395,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -431,7 +431,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>
@@ -467,7 +467,7 @@ export default function ChatOptionsSlider({ open, setOpen, setInput }: any) {
                                                                             <div className='py-1 font-normal text-xs'>{template?.note}</div>
                                                                         )}
                                                                         <div className='text-right px-2 py-1'>
-                                                                                                                                                        <Button style={{backgroundColor:"black",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
+                                                                                                                                                        <Button style={{backgroundColor:"green",color:"white"}} onClick={() => { console.log(template); addTemplateMessageToPropmt(template); "setTemplate(template)" }}>USE</Button>
 
 
                                                                         </div>

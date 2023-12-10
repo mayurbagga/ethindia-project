@@ -479,7 +479,7 @@ export const UniswapForm: FC<UniswapFormProps> = ({ data, setData }) => {
           width: '100%'
         }}
       >
-        {isEditing ? <Button style={{ borderColor: "black", color: "black" }} onClick={handleSave}>Save</Button> : <Button style={{ borderColor: "black", color: "black" }} onClick={handleEdit}>Edit</Button>}
+        {isEditing ? <Button style={{ borderColor: "green", color: "green" }} onClick={handleSave}>Save</Button> : <Button style={{ borderColor: "green", color: "green" }} onClick={handleEdit}>Edit</Button>}
       </ButtonGroup>
     </Box>
   );

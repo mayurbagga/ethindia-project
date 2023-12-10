@@ -65,6 +65,7 @@ import {
 import { Web3AuthConnector } from '../../auth/wagmi';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { ethers } from 'ethers';
+import { useActiveTabStates } from "../../providers/operations";
 
 
 
@@ -75,6 +76,9 @@ const AddressTile: CFC<{ address?: string; label: string; }> = ({
   label,
   children
 }) => {
+
+
+  
 
   return (
     <Box
@@ -184,70 +188,78 @@ export function Header() {
       console.error('Please install MetaMask or another Ethereum wallet extension.');
     }
   };
+   const [currentTab, setCurrentTab] = useState('/');
+  const { activeTabState, addActiveTabState, updateActiveTabState, setActiveTabState } = useActiveTabStates();
+
+  useEffect(() => {
+    setCurrentTab(window.location.pathname);
+  }, []);
+
+   const Menus = [
+    // { title: "Home", src: "https://i.imgur.com/QMNAWX7.png", gap: true, slug: "/home", tab: "home" },
+    { title: "Home", src: "https://i.imgur.com/QMNAWX7.png", gap: true, slug: "/", tab: "askWeb3Agent" },
+    // { title: "Ask Web3Agent", src: "https://i.imgur.com/2pHVHza.png", slug: "/", tab: "askWeb3Agent" },
+    { title: "Send Transacetion", src: "https://i.imgur.com/XjBwspt.png", slug: "/", tab: "sendTxn" },
+    // { title: "Deploy Contracts", src: "https://i.imgur.com/VT7UdPH.png", slug: "/", tab: "deployContract" },
+    { title: "Defi", src: "https://i.imgur.com/IYxIvAB.png", slug: "/defi-prompt" },
+
+    { title: "View History", src: "https://i.imgur.com/TW9s7qs.png", slug: "/history", tab: "viewHistory" },
+    { title: "Manage History", src: "https://i.imgur.com/g0as0Mv.png", slug: "/manage-history", tab: "manageHistory" },
+
+  ];
 
   return (
-    <>
+   
+    <><header className="!sticky top-6 z-40 flex h-16 w-full  border-2 rounded-2xl shrink-0 items-center justify-between  bg-gradient-to-b from-background/10 via-background/50 to-background/80 px-8 backdrop-blur-xl">
+      <div className="flex items-center gap-4">
+        {isConnected ? (
+          <>
+            {Menus.map((Menu, index) => (
+            <Link onClick={() => { setActiveTabState({ activeTab: Menu?.tab }) }} href={Menu?.slug} className='!text-gray-600 font-semibold'>
+
+              <li
+
+                key={index}
+                className={`flex  rounded-md p-2 cursor-pointer hover:bg-gray-300 w-full !text-gray-700  text-sm font-semibold items-center gap-x-2 
+                ${Menu.gap ? "mt-2" : "mt-2"} ${index === 0 && "bg-light-white"}
+                  
+                   ${currentTab === Menu?.tab ? '' : ''}
+                  `}
+                onClick={() => setCurrentTab(Menu?.tab)}
+
+              // ${router.asPath === Menu?.slug ? 'bg-gray-200' : ''}
+              >
+                <img height={"20px"} width={"20px"} src={Menu.src} />
+
+
+                <span className={`${!open && "hidden"} origin-left duration-200`}>
+                  {Menu.title}
+                </span>
+              </li>
+            </Link>
+
+          ))}
+          </>
+        ) : (
+        <></>
+        )}
+      </div>
+
+      <div className="flex items-center justify-end ">
+        <div className="flex items-center text-sm">
+
+               <ConnectButton></ConnectButton>
+
+
+
+
+        </div>
+      </div>
+
+    </header>
+
+
     </>
-    // <><header className="sticky top-0 z-50 flex h-16 w-full shrink-0 items-center justify-between border-b bg-gradient-to-b from-background/10 via-background/50 to-background/80 px-4 backdrop-blur-xl">
-    //   <div className="flex items-center gap-4">
-    //     {isConnected ? (
-    //       <>
-    //         {/* <Sidebar>
-    //           <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
-
-    //             <SidebarList  />
-    //           </React.Suspense>
-    //           <SidebarFooter>
-    //             <ThemeToggle />
-    //             <ClearHistory clearChats={clearChats} />
-    //           </SidebarFooter>
-    //         </Sidebar>
-    //         <Link href={'/defi-prompt'} className='text-gray-600 font-semibold'>
-    //           Defi Prompt
-    //         </Link> */}
-    //       </>
-    //     ) : (
-    //       <Link href="/">
-    //         <div style={{ display: "flex" }}>
-    //           <img
-    //             width={'130px'}
-    //             style={{ cursor: 'pointer' }}
-    //             src="https://i.imgur.com/VfXLfud.png"
-    //           ></img>
-    //         </div>
-
-    //       </Link>
-    //     )}
-    //   </div>
-
-    //   <div className="flex items-center justify-end space-x-2">
-    //     <div className="flex items-center">
-
-    //            <ConnectButton></ConnectButton>
-
-    //       {isConnected ? (
-    //         <>
-    //           {/* Your existing connected user interface */ }
-    //          <button onClick={handleSignMessage} className="text-white bg-black-500 px-4 py-2 rounded">
-    //             Sign Message
-    //           </button> 
-    //         </>
-    //       ) : (
-    //         <>
-
-    //         </>
-    //       )}
-
-
-
-
-    //     </div>
-    //   </div>
-
-    // </header>
-
-
-    // </>
 
   )
 }

@@ -9,7 +9,7 @@ import {
   lightTheme
 } from '@rainbow-me/rainbowkit';
 // import { getDefaultWallets, RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit'
-import { goerli, polygon, polygonZkEvmTestnet, polygonMumbai, klaytn, baseGoerli, lineaTestnet } from '@wagmi/chains'
+import { baseGoerli, lineaTestnet, scrollTestnet, arbitrumGoerli, celoAlfajores } from '@wagmi/chains'
 
 import { configureChains, createClient, WagmiConfig } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
@@ -138,8 +138,30 @@ const baobab: Chain = {
   },
   testnet: false,
 };
+const okxchain_testint: Chain = {
+  id: 65,
+  name: 'OKExChain Testnet',
+  network: 'OKExChain',
+  iconUrl: 'https://cdn.bitkeep.vip/u_b_1697a330-c21d-11ed-bb06-6b42bb500220.png',
+  iconBackground: '#fff',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'OKExChain',
+    symbol: 'OKT',
+  },
+  rpcUrls: {
+    public: { http: ['https://exchaintestrpc.okex.org'] },
+    default: { http: ['https://exchaintestrpc.okex.org'] },
+  },
+  blockExplorers: {
+    default: { name: 'Explorer', url: 'https://www.oklink.com/okexchain-test' },
 
-const NETWORKS = [baseGoerli,zeta_testnet, lineaTestnet]
+  },
+  
+  testnet: true,
+};
+
+const NETWORKS = [baseGoerli,zeta_testnet, okxchain_testint,baseGoerli, lineaTestnet, scrollTestnet, arbitrumGoerli, celoAlfajores]
 const { chains, provider } = configureChains(NETWORKS, [infuraProvider({ apiKey: "" }), publicProvider()])
 
 const { connectors } = getDefaultWallets({
@@ -159,7 +181,7 @@ export function Web3Provider(props: Props) {
       <RainbowKitProvider modalSize="compact" theme={lightTheme({
 
         borderRadius: 'medium',
-        accentColor: '#388E3C',
+        accentColor: '#000',
         fontStack: 'rounded',
 
 

@@ -5,7 +5,7 @@ export const calculateContrastColor = (
   // Convert the backgroundHash to a number
   const hashNumber = parseInt(backgroundHash.replace('#', ''), 16);
 
-  // Calculate the brightness based on the red, black, and blue components
+  // Calculate the brightness based on the red, green, and blue components
   const brightness =
     ((hashNumber & 0xff0000) >> 16) * 0.299 + ((hashNumber & 0x00ff00) >> 8) * 0.587 + (hashNumber & 0x0000ff) * 0.114;
 

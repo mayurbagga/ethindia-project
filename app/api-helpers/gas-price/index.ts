@@ -8,7 +8,7 @@ export const rpcGetGasFee = async (chainId: number) => {
     if (!rpcUrl && typeof rpcUrl !== "string") {
         throw new Error("Invalid or missing rpc url");
     }
-
+console.error("RPC URL IS========>>>>",rpcUrl)
     const response = await axios.post(rpcUrl, {
         jsonrpc: "2.0",
         id: payloadId(),
@@ -25,13 +25,28 @@ export const rpcGetGasFeeV2 = async (rpcUrl: string, method: string = 'eth_gasPr
     }
 
     try {
-        const response = await axios.post(rpcUrl, {
-            jsonrpc: "2.0",
-            id: payloadId(),
-            method,
-            params: [],
-        });
-        return response;
+        // const response = await axios.post(rpcUrl, {
+        //     jsonrpc: "2.0",
+        //     id: payloadId(),
+        //     method,
+        //     params: [],
+        // });
+        // return response;
+const chainId = 1; // Ethereum Mainnet
+
+        const Auth = Buffer.from(
+  process.env.NEXT_PUBLIC_INFURA_API_KEY + ":" + process.env.INFURA_API_KEY_SECRET,
+        ).toString( "base64" );
+        
+        
+        const { data } = await axios.get(
+      `https://gas.api.infura.io/networks/${chainId}/suggestedGasFees`,
+      {
+        headers: { Authorization: `Basic ${Auth}` },
+      },
+        );
+        console.log("Suggested gas fees:", data);
+        return data;
     } catch (error) {
         return error;
     }

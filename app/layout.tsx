@@ -18,7 +18,9 @@ import { SmartAccountProvider } from '../providers/smart-account.provider';
 import { Web3Provider } from "../auth/Web3";
 import SideToggle from '@/app/_components/sidetoggle';
 import { TablelandProvider } from '@/context/TablelandProvider';
-
+import { Header } from './_components/header';
+import Navbar from './_components/Navbar';
+import { MetaMaskProvider } from '@metamask/sdk-react';
 
 // const arbitrumSepolia = ({
 //   id: 421614,
@@ -80,11 +82,15 @@ export default function RootLayout({
                     <div className='' style={{ display: "flex", height: "screen", width: "auto" }}>
                       <div className='' >
                         <SideToggle />
+                        
                       </div>
                       <div className="flex-1 p-7 ml-64"
 
                       >
+                       
+                        <Header />
 
+                       
                         <div
                           style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}
                         // className=' flex justify-center items-start p-6 min-h-screen'

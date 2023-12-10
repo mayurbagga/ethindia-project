@@ -25,6 +25,14 @@ export const BLOCK_PI_RPC_MAPPING = {
         TRANSACTION_DETAILS_BY_HASH_METHOD: 'klay_getTransactionByHash',
         BLOCK_DETAILS_BY_HASH_METHOD: 'klay_getBlockByHash',
     },
+    //  BASEGOERLI: {
+    //     RPC_URL: 'https://goerli.base.org',
+    //     GAS_PRICE_METHOD: 'basegoerli_gasPrice',
+    //     BLOCK_DETAILS_BY_NUMBER_METHOD: 'basegoerli_getBlockByNumber',
+    //     BLOCK_NUMBER_METHOD: 'basegoerli_blockNumber',
+    //     TRANSACTION_DETAILS_BY_HASH_METHOD: 'basegoerli_getTransactionByHash',
+    //     BLOCK_DETAILS_BY_HASH_METHOD: 'basegoerli_getBlockByHash',
+    // },
     BSC: {
         RPC_URL: 'https://bsc.blockpi.network/v1/rpc/BLOCK_PI_BSC_RPC_KEY',
         GAS_PRICE_METHOD: 'eth_gasPrice',

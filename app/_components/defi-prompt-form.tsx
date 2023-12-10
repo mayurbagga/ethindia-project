@@ -84,16 +84,16 @@ export function DefiPromptForm({
         <>
           <div className='h-[calc(100vh-190px)] '>
             <Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
-              <Tab.List className="flex space-x-1 rounded-xl bg-black-900/20 p-1">
+              <Tab.List className="flex space-x-1 rounded-xl bg-green-900/20 p-1">
                 {tabs.map((category) => (
                   <Tab
                     key={category}
                     className={({ selected }) => classNames(
-                      'w-full rounded-md py-2.5 text-sm font-medium leading-5 text-black-700',
-                      'ring-white ring-opacity-60 ring-offset-2 ring-offset-black-600 focus:outline-none focus:ring-2',
+                      'w-full rounded-md py-2.5 text-sm font-medium leading-5 text-green-700',
+                      'ring-white ring-opacity-60 ring-offset-2 ring-offset-green-600 focus:outline-none focus:ring-2',
                       selected
                         ? 'bg-white shadow'
-                        : 'text-black-100 hover:bg-white/[0.12] hover:text-white'
+                        : 'text-green-100 hover:bg-white/[0.12] hover:text-white'
                     )}
                   >
                     {category}
@@ -106,7 +106,7 @@ export function DefiPromptForm({
                   key={"REQUEST"}
                   className={classNames(
                     'bg-white p-3 border rounded-md',
-                    'ring-white ring-opacity-60 ring-offset-2 ring-offset-black-600 focus:outline-none focus:ring-2'
+                    'ring-white ring-opacity-60 ring-offset-2 ring-offset-green-600 focus:outline-none focus:ring-2'
                   )}
                 >
                   <div className="h-[calc(100vh-260px)] flex flex-col justify-center items-center gap-4 ">
@@ -122,7 +122,7 @@ export function DefiPromptForm({
                   key={"TEMPLATES"}
                   className={classNames(
                     'rounded-xl bg-white p-3',
-                    'ring-white ring-opacity-60 ring-offset-2 ring-offset-black-600 focus:outline-none focus:ring-2'
+                    'ring-white ring-opacity-60 ring-offset-2 ring-offset-green-600 focus:outline-none focus:ring-2'
                   )}
                 >
                   <div className="overflow-y-auto h-[calc(100vh-250px)]">

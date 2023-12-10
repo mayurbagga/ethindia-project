@@ -213,7 +213,17 @@ const SUPPORTED_CHAINS = [
     network_id: 59140,
     rpc_url: 'https://zetachain-athens-evm.blockpi.network/v1/rpc/public',
     native_currency: ETH
-  }
+  },
+   {
+    name: 'Base Goerli Testnet',
+    short_name: 'base-goerli',
+    chain: 'ETH',
+    network: 'base-goerli',
+    chain_id: 84531,
+    network_id: 84531,
+    rpc_url: 'https://goerli.base.org',
+    native_currency: ETH
+  },
 ]
 
 export default SUPPORTED_CHAINS;

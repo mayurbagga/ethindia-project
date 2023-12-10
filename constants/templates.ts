@@ -189,10 +189,10 @@ export const TRANSACTION_COMMANDS = [
 ]
 
 export const MAINNET_GAS_PRICE_COMMANDS = [
-    {
-        action: 'GAS_PRICE_KLAYTN_NETWORK',
-        message: 'Give me the current gas price on the Klaytn network.',
-    },
+    // {
+    //     action: 'GAS_PRICE_KLAYTN_NETWORK',
+    //     message: 'Give me the current gas price on the Base Goerli network.',
+    // },
     // {
     //     action: 'GAS_PRICE_POLYGON_NETWORK',
     //     message: 'Give me the current gas price on the Polygon network.',
@@ -242,10 +242,10 @@ export const MAINNET_GAS_PRICE_COMMANDS = [
     //     action: 'GAS_PRICE_METER_NETWORK',
     //     message: 'Give me the current gas price on the Meter network.',
     // },
-    // {
-    //     action: 'GAS_PRICE_BASE_NETWORK',
-    //     message: 'Give me the current gas price on the Base network.',
-    // },
+    {
+        action: 'GAS_PRICE_BASE_NETWORK',
+        message: 'Give me the current gas price on the Base Goerli network.',
+    },
     // {
     //     action: 'GAS_PRICE_LINEA_NETWORK',
     //     message: 'Give me the current gas price on the Linea network.',

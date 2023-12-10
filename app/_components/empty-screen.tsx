@@ -178,7 +178,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
   }
   console.log({ activeTabState })
   if (!Object.keys(activeTabState).length) {
-    return <HomeEmptyScreen />
+    return <WebAgentEmptyScreen />
   }
   return (
     <>

@@ -32,7 +32,7 @@ export default function DefiPopoverTemplets() {
             <Popover.Button
               className={`
                 ${open ? '' : 'text-opacity-90'}
-               z-50  group inline-flex items-center text-xs rounded-md bg-black-700 px-3 py-2  text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+               z-50  group inline-flex items-center text-xs rounded-md bg-green-700 px-3 py-2  text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
             >
               <span>Templets</span>
              
